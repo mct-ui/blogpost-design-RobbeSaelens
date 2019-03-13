@@ -17,26 +17,26 @@ src: url("../fonts/Inter-UI-Bold.woff2") format("woff2");
 }
 
 @font-face {
-font-family: "Droid Serif";
+font-family: "Droid Serif web";
 font-weight: 400;
 src: url("../fonts/DroidSerif-Regular-webfont.woff") format("woff");
 }
 
 @font-face {
-font-family: "Droid Serif";
+font-family: "Droid Serif web";
 font-weight: 400;
 font-style: italic;
 src: url("../fonts/DroidSerif-Italic-webfont.woff") format("woff");
 }
 
 @font-face {
-font-family: "Droid Serif";
+font-family: "Droid Serif web";
 font-weight: 700;
 src: url("../fonts/DroidSerif-Bold-webfont.woff") format("woff");
 }
 
 @font-face {
-font-family: "Droid Serif";
+font-family: "Droid Serif web";
 font-weight: 700;
 font-style: italic;
 src: url("../fonts/DroidSerif-BoldItalic-webfont.woff") format("woff");
@@ -45,10 +45,11 @@ src: url("../fonts/DroidSerif-BoldItalic-webfont.woff") format("woff");
 html {
     font-size: 16px;
     line-height: 1.5;
-    /* font-family: "Inter UI", "Helvetica Neue", Helvetica, arial, sans-serif; */
-    font-family: "Droid Serif", Georgia, serif;
+    font-family: "Droid Serif web", georgia, serif;
     color: #5C6366;
     padding: 48px 24px 24px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -90,20 +91,24 @@ h1,
 h2,
 h3{
     color: #17181A;
-    font-family: "Inter UI", "Helvetica Neue", Helvetica, arial, sans-serif;
+    font-family: "Inter UI whatever", "Helvetica Neue", Helvetica, arial, sans-serif;
 }
 
 h1 {
+    font-family: "Playfair Display" georgia, serif;
     font-size: 36px;
     line-height: 40px;
     margin: 0 0 24px;
-    font-family: "Playfair Display" serif;
 }
 
 h2 {
     font-size: 23px;
     line-height: 32px;
     margin: 0 0 24px;
+}
+
+* + h2{
+    margin-top: 48px;
 }
 
 h3 {
