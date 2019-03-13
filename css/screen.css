@@ -5,7 +5,7 @@
 */
 
 @font-face {
-font-family: "Inter UI";
+font-family: "Inter UI whatever";
 font-weight: 400;
 src: url("../fonts/Inter-UI-Regular.woff2") format("woff2");
 }
@@ -97,6 +97,7 @@ h1 {
     font-size: 36px;
     line-height: 40px;
     margin: 0 0 24px;
+    font-family: "Playfair Display" serif;
 }
 
 h2 {
